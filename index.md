@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Scientific thoughts from Adina
+title: Scientific thoughts and other things...
 tagline: 
 ---
 {% include JB/setup %}
