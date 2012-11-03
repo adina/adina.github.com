@@ -1,7 +1,5 @@
 ---
 layout: post
-title: "Hello World!"
-description: "My first blog post"
 category: intro 
 tags: [newbie]
 ---
