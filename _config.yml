@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : <FONT SIZE = 3>a</FONT><FONT SIZE = 7>D</FONT><FONT SIZE = 3>i</FONT><FONT SIZE = 7>NA</FONT> 
+title : <FONT SIZE = 2.5>a</FONT><FONT SIZE = 5>D</FONT><FONT SIZE = 2.5>i</FONT><FONT SIZE = 5>NA</FONT> 
 tagline: Site Tagline
 author :
   name : Adina Howe
