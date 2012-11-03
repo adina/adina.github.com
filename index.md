@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Scientific thoughts and other things...
+title: Thoughts on science and random things.
 tagline: 
 ---
 {% include JB/setup %}
