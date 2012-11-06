@@ -6,9 +6,6 @@ category:
 tags: []
 ---
 {% include JB/setup %}
-<body>
-<h1>The Importance of Control</h1>
-
 <p>Recently, I’ve been spending a lot of time combining overlapping short sequencing reads (100 bp) into longer sequences called contigs.  Since I’m doing this without any reference genomes, this is called de novo assembly.  (Here’s a really nice introduction into the subject from the University of Maryland, <a href="http://www.cbcb.umd.edu/research/assembly_primer.shtml">Primer</a>.</p>
 
 <p>The datasets I’m working with are challenging in a couple unique ways.  Firstly, they’re ginormous – 3 billion reads (~300 billion bp or the equalalent 75,000 E. coli genomes).  This has been the subject of many of my pal and previous boss, C. Titus Brown’s blogposts, <a href="http://ivory.idyll.org/blog/">Living in an Ivory Basement</a>).  We think we have a good grasp on how to process and assemble this data nowadays.   One of the key things I realized while dealing with this first challenge was the second problem…and that is, how do we know what we’re getting out is right?  Are the assemblies we produce correct?   Basically, are the methods we are using doing what I think they are?</p>
