@@ -1,5 +1,13 @@
 ---
 layout: post
+title: "Control Freak"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
+---
+layout: post
 title: "The Importance of Control"
 description: ""
 category: 
