@@ -3,7 +3,7 @@ layout: post
 title: "The Importance of Control"
 description: ""
 category: 
-tags: [control, mock, hmp]
+tags: []
 ---
 {% include JB/setup %}
 <p>Recently, I’ve been spending a lot of time combining overlapping short sequencing reads (100 bp) into longer sequences called contigs.  Since I’m doing this without any reference genomes, this is called de novo assembly.  (Here’s a really nice introduction into the subject from the University of Maryland, <a href="http://www.cbcb.umd.edu/research/assembly_primer.shtml">Primer</a>.</p>
