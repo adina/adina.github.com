@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "The Importance of Control"
-description: "Useful datasets to be a control freak with analysis"
+description: ""
 category: 
-tags: [HMP, mock, bioinformatics]
+tags: []
 ---
 {% include JB/setup %}
 
@@ -74,6 +74,5 @@ Also, in case you don't know how to work with the SRA or get stuck in what is th
 I hope you enjoy control as much as I do.
 
 Signing off my very first blog post (woot!),
-
 
 Adina
