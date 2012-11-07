@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thoughts on science and random things.
+title: Thoughts on science and random things
 tagline: 
 ---
 {% include JB/setup %}
@@ -13,4 +13,4 @@ Recent posts:
   {% endfor %}
 </ul>
 
-
+<a href="feed.rss">Subscribe to RSS Feed</a>

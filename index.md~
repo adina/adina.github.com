@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Thoughts on science and random things.
+title: Thoughts on science and random things
 tagline: 
 ---
 {% include JB/setup %}
 
-Here's a sample "posts list".
+Recent posts:
 
 <ul class="posts">
   {% for post in site.posts %}
@@ -13,4 +13,4 @@ Here's a sample "posts list".
   {% endfor %}
 </ul>
 
-
+<a href="feed.xml">Subscribe to What's New</a>
