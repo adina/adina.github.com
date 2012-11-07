@@ -21,7 +21,6 @@ I want to highlight a couple use cases where I have found this dataset (or somet
 
 ###\#1 Evaluation of Digital Normalization and Partitioning for Assembly
 
-
 Briefly, our approaches efficiently sift through metagenomic data and eliminate redundant information above a user-defined threshold (i.e., you only need to see an overlap X number of times before you're sure that it should be assembled).  We then break apart pieces of the total metagenome which are not connected (i.e. separating genome A and B).  We then assemble each of these "partitions" independently.  I needed to evaluate what was happening when we're discarding data and manipulating data in different groups.  Using the mock dataset, I assembled the unprocessed dataset with a variety of assemblers and compared this to the processed dataset assembled.  I could determine the similarity between assemblies and most importantly, the recovery of reference genomes.  Awesomely, I found that after I processed the mock metagenome, I got better assemblies!
 
 
@@ -31,7 +30,6 @@ Briefly, our approaches efficiently sift through metagenomic data and eliminate 
 Table 1. Assembly comparisons of unfiltered (UF) and filtered (F) or filtered/partitioned (FP) HMP mock datasets using different assemblers (Velvet (V), MetaIDBA (M) and SOAPdenovo (S)).  Assembly content similarity is based on the fraction of alignment of assemblies and similarly, the coverage of reference genomes is based on the alignment of assembled contigs to reference genomes (RG).
 
 ###\#2 Identifying Housekeeping Genes in Assembled Contigs
-
 
 I had a problem in that I needed to determine how to compare different metagenomic assemblies of two different samples.  I decided I would normalize by some known housekeeping genes as a proxy for number of genomes.  The problem is that I wasn't sure how accurate a reference based annotation (using HMMER) of various gene models (recA, rpoB, gyrB, etc.) against my assembled contigs would fair.  Using the mock metagenome (containing 21 genomes), I was able to determine that estimates of the mock community there were some gene models, gyrB and rpoB, (because of their length) were not candidates. These would overestimate the total number of genomes.
 
