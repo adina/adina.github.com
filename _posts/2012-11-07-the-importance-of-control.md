@@ -35,7 +35,7 @@ Table 1. Assembly comparisons of unfiltered (UF) and filtered (F) or filtered/pa
 
 I had a problem in that I needed to determine how to compare different metagenomic assemblies of two different samples.  I decided I would normalize by some known housekeeping genes as a proxy for number of genomes.  The problem is that I wasn't sure how accurate a reference based annotation (using HMMER) of various gene models (recA, rpoB, gyrB, etc.) against my assembled contigs would fair.  Using the mock metagenome (containing 21 genomes), I was able to determine that estimates of the mock community there were some gene models, gyrB and rpoB, (because of their length) were not candidates. These would overestimate the total number of genomes.
 
-![Table 1](https://raw.github.com/adina/adina.github.com/master/_posts/figures/2012-11-06-control/table2.png)
+![Table 2](https://raw.github.com/adina/adina.github.com/master/_posts/figures/2012-11-06-control/table2.png)
 
 Table 2. Number of housekeeping genes identified in HMP mock community reference genomes and assembled (Velvet) contigs.
 
@@ -66,10 +66,10 @@ Though I caution you that I do not find these abundances to be accurate based on
 
 Also, in case you don't know how to work with the SRA or get stuck in what is the perpetual link-loop purgatory within the SRA (as I often do), I've also placed them here:
 
-> [Even HMP mock fastq](http://lyorn.idyll.org/~adina/SRR172902.fastq.gz)
+> [Even HMP mock fastq]("http://lyorn.idyll.org/~adina/SRR172902.fastq.gz")
 
 
-> [Staggered HMP mock fastq](http://lyorn.idyll.org/~adina/SRR172903.fastq.gz)
+> [Staggered HMP mock fastq]("http://lyorn.idyll.org/~adina/SRR172903.fastq.gz")
 
 I hope you enjoy control as much as I do.
 
