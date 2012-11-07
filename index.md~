@@ -13,4 +13,4 @@ Recent posts:
   {% endfor %}
 </ul>
 
-<a href="feed.xml">Subscribe to What's New</a>
+<a href="feed.rss">Subscribe to RSS Feed</a>
