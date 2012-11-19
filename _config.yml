@@ -10,12 +10,12 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : <FONT SIZE = 3.5>a</FONT><FONT SIZE = 6>D</FONT><FONT SIZE = 3.5>i</FONT><FONT SIZE = 6>NA</FONT> 
-tagline: Site Tagline
+tagline: 
 author :
-  name : Adina Howe
-  email : howead@msu.edu
-  github:  adina
-
+  name : 
+  email : 
+  github:  
+  twitter:  
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls

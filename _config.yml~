@@ -12,10 +12,10 @@ pygments: true
 title : <FONT SIZE = 3.5>a</FONT><FONT SIZE = 6>D</FONT><FONT SIZE = 3.5>i</FONT><FONT SIZE = 6>NA</FONT> 
 tagline: Site Tagline
 author :
-  name : Adina Howe
-  email : howead@msu.edu
-  github:  adina
-
+  name : 
+  email : 
+  github:  
+  twitter:  
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -121,6 +121,7 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+
 name:  aDiNA
 description:  Thoughts on science and random things
 url:  http://adina.github.com
