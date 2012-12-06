@@ -3,7 +3,7 @@ layout: post
 title: "How I became GrownUp Adina"
 description: "How to infiltrate the bioinformaticians"
 category: 
-tags: [personal, young scientists, advice]
+tags: [newbie, personal, young scientists, advice]
 ---
 {% include JB/setup %}
 
@@ -46,7 +46,7 @@ This all evolved into me being involved in several efforts which have culminated
 
 ## Luck:
 
-I just got damn lucky with tons of resources to succeed. The most important was incredible mentorship.  I also had a great team of young researchers to work with.  I remember meeting one over Christmas break to go over Python Loops in his dorm.  He doesn't know this but I was really about to give up on programming that week and ask to go back to the bench.  He most likely saved tons of strains from contamination in the lab :)  Not everyone has these resources, but there are a TON out there that a freely available to help YOU.  There is also strong community to help scientist infiltrate bioinformatics.  I'm going to spend the next blog going over some of these resources and some specific advice on first steps from my experience.
+I just got damn lucky with tons of resources to succeed. The most important was incredible mentorship.  I also had a great team of young researchers to work with.  I remember meeting one over Christmas break to go over Python Loops in his dorm.  He doesn't know this but I was really about to give up on programming that week and ask to go back to the bench.  He most likely saved tons of strains from contamination in the lab :)  Not everyone has these resources, but there are a TON out there that are freely available to help YOU.  There is also strong community to help scientist infiltrate bioinformatics.  I'm going to spend the next blog going over some of these resources and some specific advice on first steps from my experience.
 
 
 ## Snippet of my NSF Postdoc Fellowship in Computational Biology:
