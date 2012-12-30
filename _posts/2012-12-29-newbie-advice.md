@@ -13,9 +13,9 @@ I spent our long holiday car trip coming up with some advice I'd give my past se
 
 ## 1. Commit (and stop whining)
 
-You'd think years of experience of trying new things would prepare me that learning new things is hard, but I still get frustrated at how long it takes for me to become efficient at new adventures.  Learning to use my computer in new way and transforming into Adina2.0 was no different.  
+You'd think years of experience of trying new things would prepare me that learning new things is hard, but I still get frustrated at how long it takes for me to become efficient at new adventures.  Learning to use my computer in new ways and transforming into Adina2.0 was no different.  
 
-The first thing I had to do was to commit to doing things the way I already knew how to do them and to start from ground zero.  In bioinformatics land, this meant for me to stop using my Finder (the equivalent to Windows Explorer on PCs), Excel, and any graphical-interface easy-to-use software on my computer.  
+The first thing I had to do was commit to doing things at ground zero even though I already knew how to do them a different way. In bioinformatics land, this meant for me to stop using my Finder (the equivalent to Windows Explorer on PCs), Excel, and any graphical-interface easy-to-use software on my computer.  
 
 To Adina1.0, don't worry that you could have sorted that list in 10 seconds in Excel, and it took you half a day to write that sorting program because now you can sort a million lists in ten seconds and someone pays you for it.
 
@@ -29,7 +29,7 @@ To Adina1.0, it doesn't matter how much more that pretty shiny computer costs, i
 
 ## 3. Take Command
 
-Learn to use the "[command shell](http://software-carpentry.org/4_0/shell/intro.html)".  The best description I've gotten of the command shell is that it is the pilot's seat, its a program that's job is to run the other programs. For many bioinformatic tools, there is either only a command-line interface or a more flexible version within the command line.  It also allows you to do amazing things with existing programs, such as automate them.
+Learn to use the "[command shell](http://software-carpentry.org/4_0/shell/intro.html)".  The best description I've gotten of the command shell is that it is the pilot's seat, it's a program that's job is to run the other programs. For many bioinformatic tools, there is either only a command-line interface or a more flexible version within the command line.  It also allows you to do amazing things with existing programs, such as automate them.
 
 To Adina1.0, on a Mac, you can access the command line from the Terminal app.  Do some googling on "command line tutorials" or check out [Software Carpentry's](http://software-carpentry.org/4_0/index.html) tutorials on the shell.  
 
@@ -41,9 +41,9 @@ To Adina1.0, even though you use Emacs, be able to at least open, close, and sav
 
 ## 5. Learn to manipulate files
 
-Start memorizing commands and use them regularly, list files (ls), rename/move a file (mv), copy a file (cp), read a file (cat, head, tail, less, more), etc.  Google "common unix commands" and you'll find useful resources like [this one](https://pangea.stanford.edu/computing/unix/shell/commands.php).
+Start memorizing commands and use them regularly: list files (ls), rename/move a file (mv), copy a file (cp), read a file (cat, head, tail, less, more), etc.  Google "common unix commands" and you'll find useful resources like [this one](https://pangea.stanford.edu/computing/unix/shell/commands.php).
 
-To Adina1.0, you can do everyting you many of the things you can do in the finder in the shell - use the shell daily for this.
+To Adina1.0, you can do many of the things you can do in the finder in the shell - use the shell daily for this.
 
 ## 6.  Shortcuts!
 
@@ -65,7 +65,7 @@ There are so many to learn, and some are easier than others.  There are also ton
 
  Here are some more that looked interesting, a free [Google class] (https://developers.google.com/edu/python/) and [a fun interactive one](http://www.learnpython.org/).
 
-To Adina1.0, pick up Python, its awesome.  More important than reading is just doing.  Just write a program daily for a month. Write down ten things you do with excel and then do that with Python (i.e., alphabetize a list, sort by the 5th column, find and replace a word, find the average and standard deviation, copy a file to another file with slight changes on each line, switch from tab delimited to comma separated outputs, etc.).  Use two terminal windows, one for writing the program and one for executing and put them side by side.
+To Adina1.0, pick up Python, its awesome.  More important than reading is just doing.  Write a program daily for a month. Write down ten things you do with excel and then do that with Python (i.e., alphabetize a list, sort by the 5th column, find and replace a word, find the average and standard deviation, copy a file to another file with slight changes on each line, switch from tab delimited to comma separated outputs, etc.).  Use two terminal windows, one for writing the program and one for executing and put them side by side.
 
 ## 8.  Become addicted to print statements 
 
@@ -97,7 +97,7 @@ One of the most used bionformatic tools since its essentially our "biology thesa
 
 Here is our [tutorial](http://ged.msu.edu/angus/tutorials-2012/files/static-ngs-10-blast.html) or [tutorial-not-in-ipython](http://ged.msu.edu/angus/tutorials-2011/running-blast.html) on using it and manipulating its output. (Random advice: Just copy and paste commands following but not including the "%%" in gray.)
 
-To Adina1.0, if you can't install a program on your computer, try it on a clean install of unix on a server using Amazon EC2.  If you can't get it on there, find a friend to help because that's what they are there for.
+To Adina1.0, if you can't install a program on your computer, try installing it on a clean install of unix on a server using Amazon EC2.  If you can't get it on there, find a friend to help because that's what they are there for.
  
 ## 10. Start automating.
 
