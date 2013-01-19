@@ -66,10 +66,10 @@ Though I caution you that I do not find these abundances to be accurate based on
 
 Also, in case you don't know how to work with the SRA or get stuck in what is the perpetual link-loop purgatory within the SRA (as I often do), I've also placed them here:
 
-[Even HMP mock fastq]("http://lyorn.idyll.org/~adina/SRR172902.fastq.gz")
+[Even HMP mock fastq](http://lyorn.idyll.org/~adina/SRR172902.fastq.gz)
 
 
-[Staggered HMP mock fastq]("http://lyorn.idyll.org/~adina/SRR172903.fastq.gz")
+[Staggered HMP mock fastq](http://lyorn.idyll.org/~adina/SRR172903.fastq.gz)
 
 I hope you enjoy control as much as I do.
 
