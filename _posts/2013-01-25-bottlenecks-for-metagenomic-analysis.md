@@ -40,7 +40,7 @@ One way to do this is to annotate the functions of the sequences against known f
 
 The problems to think about:
 
-# That squirrelly database...
+### That squirrelly database...
 
 Let's assume I've accepted to move beyond the biases in the database (that's a whole blog on its own)...Its still full of redundant 100% identical sequences with different annotations.  
 
@@ -53,14 +53,14 @@ Examples:
 Proposed solution:
 - On the database end, some work has been done to try to remove redundancy via the [M5NR](http://press.igsb.anl.gov/mg-rast/howto/m5nr-â-the-m5-non-redundant-protein-database), and I think its a good and necessary effort.  
 
-# BLAST it!...
+### BLAST it!...
 
 We say things are similar to a database based usually on some sort of "matched" score.  Often, a sequence can have identical hits to multiple database entries.  In that case, which do we choose?  All the best hits?  A random one?
 
 Proposed solution:
 I don't like randomly picking a random best hit.  I think you have to take all the "best"-est hits or you aren't getting a representation of your population.  Can you imagine if the aliens came down and said all of us humans are best hit matches and just selected any one of us to be the single representation for the human race?  Alternately, I guess they could just abduct us all.  Either way...I think we're in trouble.
 
-# Connecting the dots...
+### Connecting the dots...
 
 There are key connections we like to make about our annotations.  First, we like to group our annotations into even broader groups (i.e., specific metabolic pathways like nitrogen metabolism).  The challenge here is that functions can be involved in multiple groups.  Also, we like to connect our functional annotations with possible taxonomic origins.  Again, multiple functions have multiple taxonomic origins, which then become associated with multiple of the broader functional groups.  These challenges escalate when I think about how you should incorporate the abundance of a sequence which is associated with an annotation, which is associated with multiple organisms and multiple "broader"-functions. 
 
