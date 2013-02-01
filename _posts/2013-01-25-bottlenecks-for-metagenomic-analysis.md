@@ -40,7 +40,7 @@ One way to do this is to annotate the functions of the sequences against known f
 
 The problems to think about:
 
-That squirrelly database...
+# That squirrelly database...
 
 Let's assume I've accepted to move beyond the biases in the database (that's a whole blog on its own)...Its still full of redundant 100% identical sequences with different annotations.  
 
@@ -53,25 +53,26 @@ Examples:
 Proposed solution:
 - On the database end, some work has been done to try to remove redundancy via the [M5NR](http://press.igsb.anl.gov/mg-rast/howto/m5nr-â-the-m5-non-redundant-protein-database), and I think its a good and necessary effort.  
 
-BLAST it!...
+# BLAST it!...
 
 We say things are similar to a database based usually on some sort of "matched" score.  Often, a sequence can have identical hits to multiple database entries.  In that case, which do we choose?  All the best hits?  A random one?
 
 Proposed solution:
 I don't like randomly picking a random best hit.  I think you have to take all the "best"-est hits or you aren't getting a representation of your population.  Can you imagine if the aliens came down and said all of us humans are best hit matches and just selected any one of us to be the single representation for the human race?  Alternately, I guess they could just abduct us all.  Either way...I think we're in trouble.
 
-Connecting the dots...
+# Connecting the dots...
 
 There are key connections we like to make about our annotations.  First, we like to group our annotations into even broader groups (i.e., specific metabolic pathways like nitrogen metabolism).  The challenge here is that functions can be involved in multiple groups.  Also, we like to connect our functional annotations with possible taxonomic origins.  Again, multiple functions have multiple taxonomic origins, which then become associated with multiple of the broader functional groups.  These challenges escalate when I think about how you should incorporate the abundance of a sequence which is associated with an annotation, which is associated with multiple organisms and multiple "broader"-functions. 
 
 Proposed solution:
-I dont tdon't there is a good solution here.  We're going to have to make assumptions to continue working with the data this.  
+I don't think there is a good solution here.  We're going to have to make assumptions to continue working with the data this.  
 
 Advanced warning:  Get ready for brain explosion!  (Proposed solution: go get a glass of wine)
 
-Let's take an example:  I have a sequence (with abundance of 10) with equal matches to two non-redundant functions.  Non-redundant function #1 is associated with multiple redundant sequences which originate from multiple organisms.  I would argue that you should count each of these organisms as being present 10 times.  Similarly for non-redundant function #2 whose associated sequences originate from multiple organisms -- they should all get a count of 10 too.  If non-redundant function #1 and #2 are involved in two different broad-function groups, they should also get a count of 10.  And the organiorganismiated with each function would also be associated with the broader-group with a count of 10 (to be combined with other functions in the broad-group).  If non-redundant function #1 and #2 are involved in the same broad-group, it should get a single count of 10 but all the organisms associated with non-redundant #1 and #2 would associated with the broad-function at counts of 10 each.  I've been told that one of the reasons people dont ddon'tis is that they don't like it when genus --> class --> phyla --> etc.  dont add up.  I would argue that the comparison shouldn't be done between different taxonomic levels but rather between samples or within a sample (i.e., what is the taxonomic origin of function A vs B?).  My argument for counting everything is similar to my alien argument (officially trademarked heah).  (I should credit Kirsten for pushing me in this direction, so if I'm wrong, I got bad mentorship.  But if I'm right, I'm a brilliant young investigator...with awesome mentorship of course.)
+Let's take an example:  I have a sequence (with abundance of 10) with equal matches to two non-redundant functions.  Non-redundant function #1 is associated with multiple redundant sequences which originate from multiple organisms.  I would argue that you should count each of these organisms as being present 10 times.  Similarly for non-redundant function #2 whose associated sequences originate from multiple organisms -- they should all get a count of 10 too.  If non-redundant functions #1 and #2 are involved in two different broad-function groups, they should also get a count of 10.  And the organism associated with each function would also be associated with the broader-group with a count of 10 (to be combined with other functions in the broad-group).  If non-redundant function #1 and #2 are involved in the same broad-group, it should get a single count of 10 but all the organisms associated with non-redundant #1 and #2 would associated with the broad-function at counts of 10 each.  I've been told that one of the reasons people don't do this is that they don't like it when genus --> class --> phyla --> etc.  dont add up.  I would argue that the comparison shouldn't be done between different taxonomic levels but rather between samples or within a sample (i.e., what is the taxonomic origin of function A vs B?).  My argument for counting everything is similar to my alien argument (officially trademarked heah).  (I should credit Kirsten for pushing me in this direction, so if I'm wrong, I got bad mentorship.  But if I'm right, I'm a brilliant young investigator...with awesome mentorship of course.)
 
-This really bothers me.  Its possible we're overcounting a lot!   How possible is it to determine patterns of correlation when we're doing so much assuming/overestimating?  Our strategy has been to follow original hypotheses related to the experimental design to directly explore specific functions and their originating taxonomy.  Fortunately, we've got other data to provide additional support beyond sequencing data -- someone was a smartie (ISU)!
+This really bothers me.  It's possible we're overcounting a lot!   How possible is it to determine patterns of correlation when we're doing so much assuming/overestimating?  Our strategy has been to follow original hypotheses related to the experimental design to directly explore specific functions and their originating taxonomy.  Fortunately, we've got other data to provide additional support beyond sequencing data -- someone was a smartie (ISU)!
+
 Anyways, if someone could tell me how to fix this, I'm in.
 
 I can imagine k-mer approaches for unsupervised pattern (no classification, like 16S OTUs) for metagenomes and I think that's where the solution has to lie.  We have some pretty neat ways to think about this in the works with Titus Brown and [khmer](https://github.com/ctb/khmer) software, let's chat if you've got ideas or are interested.
