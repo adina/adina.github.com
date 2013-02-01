@@ -7,7 +7,8 @@ tags: [metagenomics, analysis, challenges]
 ---
 {% include JB/setup %}
 
-I just came back from a week at Iowa State University with Kirsten Hofmockel and her fantastic group.  Team Hofmockel is interested in studying soil microbial communities in bioenergy crop systems (something I know a little bit about from Jim Tiedje and C. Titus Brown).  We're combining a nice experiment  that involves lots of useful biogeochemistry measurements with deep metagenomic sequencing (oh yeah...).  Throw in the support of the DOE KBase initiative and my colleagues at ANL, we've got a lot of experts, tools, and resources in one room. #KBase Link>  (FYI - these resources are coming soon to a laboratory near you in late February...I'll blog on it.)
+
+I just came back from a week at Iowa State University with Kirsten [Hofmockel](http://kirstenhofmockel.org) and her fantastic group.  Team Hofmockel is interested in studying soil microbial communities in bioenergy crop systems (something I know a little bit about from Jim [Tiedje](http://www.glbrc.msu.edu) and C. Titus Brown).  We're combining a nice experiment  that involves lots of useful biogeochemistry measurements with deep metagenomic sequencing (oh yeah...).  Throw in the support of the DOE [KBase](http://kbase.us) initiative and my colleagues at ANL, we've got a lot of experts, tools, and resources in one room. (FYI - these resources are coming soon to a laboratory near you in late February...I'll blog on it.)
 
 The following is some of the challenges we faced when working with this data:
 
@@ -17,7 +18,7 @@ We had 16S amplicons, annotated WGS raw reads, assembled WGS reads, and assemble
 
 ## We have "middle numbers" data.
 
-In a recent great read outlining some key questions and knowledge gaps in ecology, they describe what I agree is a key challenge to using metagenomics to study ecological systems. #link to 100?s paper#
+In a recent great [read](http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2664.2006.01188.x/abstract) outlining some key questions and knowledge gaps in ecology, they describe what I agree is a key challenge to using metagenomics to study ecological systems. 
 
 "In small-number systems like the solar system, the relationship between the components, and the state of the system, can often be adequately described by a simple set of equations. In contrast, in large-number systems such as chemical interactions in fluids, the behavior of the system can usually be adequately described using statistical averages because of the large number of components and the simple nature of their interactions.  Ecological systems unfortunately belong to the study of middle numbers; they are too complex to describe individually, yet their components are too few and their interactions too complex to be described by statistical dynamics..."
 
@@ -25,37 +26,64 @@ The "middle" numbers of our soil metagenomes can be attributed to many aspects o
 
 ##  Reducing the complexity of our data to find signals in our data is... complex.
 
-We primarily took one approach to simplify our datasets, we tried to group similar sequences together.  For example, exploring function, we might cluster all genes related to DNA replication or Nitrogen metabolism together. #seed subsystems#  Alternately, we might perform an ordination of all classes of taxa and extract significant groupings from statistical analysis. #vegan citation#  In my mind, this is similar to supervised (classification) or unsupervised grouping (ordination methods).  One could also combine these, i.e., ordination of classified groupings.  (Note: Again, a lot of choices and analyses to perform...the value of replication of analysis is high here.)
+In the beginning, I think we, and most other people I know, are trying to answer a handful of questions:
 
-Let's take a step back and think about what goes into classification and annotating a sequence.  
+1. What is the profile (functional / taxonomic) within a single sample for specific or all functions?
 
-Like many others, we annotated biological features based on sequence similarity to a database.  This database of who's and what's could and does contain:
+2. Are these profiles different between samples?  
 
-1. A unique sequence of a single function that has only been seen once in a single genus
-2. Multiple sequences (100% identical) of a single function which originate from multiple organisms
-3. Multiple sequences of multiple functions which originate from multiple organisms
+3. How are they different? 
 
-For practical purposes, let's call each of these database entries an "annotation node".  As we group related annotation nodes, things get a dicey and we're going to make some decisions.  
+To accomplish this, the first thing that happens is we have to start grouping similar sequences together.  
 
-Group 1:
+One way to do this is to annotate the functions of the sequences against known functions and to group them by similarity of function.  This is done so routinely that until the past several weeks I haven't really thought much about it.  It's routine but it's not straight forward.  And I should definitely think about it...I think.
 
-Annotation Node #1 - Type III, enzyme 1, enzyme 2, genus 1, genus 2 - abundance = 5
+The problems to think about:
 
-Annotation Node #2 - Type III, enzyme 3, enzyme 4, genus 3, genus 4 - abundance = 3
+That squirrelly database...
 
-Now we have two groups of higher level functions that are related to multiple functions and organisms.  The question is what is the abundance and functions related to the two groups and how do you attribute counts of abundance to each item within an annotation node?  Does each item get the same count?  A relative fraction of the count?  Do you pick a representative (randomly, LCA, etc?)  Thinking on this, I think it depends on your question.  If I want to compare the presence of functions related in Group 1 between two samples, it would be reasonable to only count a single representative of each annotation node (i.e., enzyme 1 and enzyme 3).  And then the associated phyla (genuses 1 and 3) corresponding to that function would only be represented, excluding  genuses 2 and 3.  Alternately, if I wanted to know the group of bacteria that could potentially contribute to providing group 2 functions (and then compare this between metagenomes), I would want to include all information in each annotation node.  
+Let's assume I've accepted to move beyond the biases in the database (that's a whole blog on its own)...Its still full of redundant 100% identical sequences with different annotations.  
 
-The ability to flexibly choose these annotations and return this data to the users has been both a goal and challenge to our group.  I'm still not sure which to tell users is correct.  
+Examples:
+- Conserved sequences between unrelated functions
+- Conserved sequences between related functions with slightly different annotations
+- Conserved sequences of the same function but from different species
+- Conserved sequences with the same function but from different annotation sources
 
+Proposed solution:
+- On the database end, some work has been done to try to remove redundancy via the [M5NR](http://press.igsb.anl.gov/mg-rast/howto/m5nr-â-the-m5-non-redundant-protein-database), and I think its a good and necessary effort.  
+
+BLAST it!...
+
+We say things are similar to a database based usually on some sort of "matched" score.  Often, a sequence can have identical hits to multiple database entries.  In that case, which do we choose?  All the best hits?  A random one?
+
+Proposed solution:
+I don't like randomly picking a random best hit.  I think you have to take all the "best"-est hits or you aren't getting a representation of your population.  Can you imagine if the aliens came down and said all of us humans are best hit matches and just selected any one of us to be the single representation for the human race?  Alternately, I guess they could just abduct us all.  Either way...I think we're in trouble.
+
+Connecting the dots...
+
+There are key connections we like to make about our annotations.  First, we like to group our annotations into even broader groups (i.e., specific metabolic pathways like nitrogen metabolism).  The challenge here is that functions can be involved in multiple groups.  Also, we like to connect our functional annotations with possible taxonomic origins.  Again, multiple functions have multiple taxonomic origins, which then become associated with multiple of the broader functional groups.  These challenges escalate when I think about how you should incorporate the abundance of a sequence which is associated with an annotation, which is associated with multiple organisms and multiple "broader"-functions. 
+
+Proposed solution:
+I dont tdon't there is a good solution here.  We're going to have to make assumptions to continue working with the data this.  
+
+Advanced warning:  Get ready for brain explosion!  (Proposed solution: go get a glass of wine)
+
+Let's take an example:  I have a sequence (with abundance of 10) with equal matches to two non-redundant functions.  Non-redundant function #1 is associated with multiple redundant sequences which originate from multiple organisms.  I would argue that you should count each of these organisms as being present 10 times.  Similarly for non-redundant function #2 whose associated sequences originate from multiple organisms -- they should all get a count of 10 too.  If non-redundant function #1 and #2 are involved in two different broad-function groups, they should also get a count of 10.  And the organiorganismiated with each function would also be associated with the broader-group with a count of 10 (to be combined with other functions in the broad-group).  If non-redundant function #1 and #2 are involved in the same broad-group, it should get a single count of 10 but all the organisms associated with non-redundant #1 and #2 would associated with the broad-function at counts of 10 each.  I've been told that one of the reasons people dont ddon'tis is that they don't like it when genus --> class --> phyla --> etc.  dont add up.  I would argue that the comparison shouldn't be done between different taxonomic levels but rather between samples or within a sample (i.e., what is the taxonomic origin of function A vs B?).  My argument for counting everything is similar to my alien argument (officially trademarked heah).  (I should credit Kirsten for pushing me in this direction, so if I'm wrong, I got bad mentorship.  But if I'm right, I'm a brilliant young investigator...with awesome mentorship of course.)
+
+This really bothers me.  Its possible we're overcounting a lot!   How possible is it to determine patterns of correlation when we're doing so much assuming/overestimating?  Our strategy has been to follow original hypotheses related to the experimental design to directly explore specific functions and their originating taxonomy.  Fortunately, we've got other data to provide additional support beyond sequencing data -- someone was a smartie (ISU)!
+Anyways, if someone could tell me how to fix this, I'm in.
+
+I can imagine k-mer approaches for unsupervised pattern (no classification, like 16S OTUs) for metagenomes and I think that's where the solution has to lie.  We have some pretty neat ways to think about this in the works with Titus Brown and [khmer](https://github.com/ctb/khmer) software, let's chat if you've got ideas or are interested.
+ 
 ## How do you compare different samples (normalization)? 
 
-Most people standardize their datasets by the total # of annotations to make samples more comparable.  Kevin Keegan in our group suggest the following normalization procedure to make samples more comparable (i.e., if one sample had a really good/bad sequencing run to over/under estimate resulting abundances):
-
+Most people standardize their datasets by the total # of annotations to make samples more comparable.  
 
 A question that I often wonder is are we transforming real biological signal in our normalization approaches (especially if we don't have replicates to test this).  To fix this, I'm going to push putting spiked standards into all my future metagenomic runs.  I'm not sure what the disadvantage is for this besides some marginal costs.  It would certainly help me out on the analysis end determining how to normalize my data.  We did this with microarrays, no reason not to learn from it, right?
 
-Concluding, my advice to our team is to follow their original hypotheses with very directed tests, i.e., select specific functions they expect to be the same  or different in metagenomes.  Fortunately, they've got other data to help provide support for evidence in metagenomes -- aren't they smart!
+Here's some advice from Kevin [Keegan](http://adina.github.com/2013/01/31/normalization-wisdom-from-kevin-keegan) -- he gave such a nice description that it deserved its own posting!
 
-I'd be delighted if others could share their experiences in challenges/solutions they've had in dealing with metagenomic analysis.  I'm certainly still figuring out how to do this right, and always appreciate advice.
+It'd be awesome if others could share their experiences in challenges/solutions they've had in dealing with metagenomic analysis.  I'm certainly still figuring out how to do this right, and always appreciate advice.
 
 ~adina
