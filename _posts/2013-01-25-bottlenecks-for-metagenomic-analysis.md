@@ -8,7 +8,17 @@ tags: [metagenomics, analysis, challenges]
 {% include JB/setup %}
 
 
-I just came back from a week at Iowa State University with Kirsten [Hofmockel](http://kirstenhofmockel.org) and her fantastic group.  Team Hofmockel is interested in studying soil microbial communities in bioenergy crop systems (something I know a little bit about from Jim [Tiedje](http://www.glbrc.msu.edu) and C. Titus Brown).  We're combining a nice experiment  that involves lots of useful biogeochemistry measurements with deep metagenomic sequencing (oh yeah...).  Throw in the support of the DOE [KBase](http://kbase.us) initiative and my colleagues at ANL, we've got a lot of experts, tools, and resources in one room. (FYI - these resources are coming soon to a laboratory near you in late February...I'll blog on it.)
+I just came back from a week at Iowa State University with Kirsten
+[Hofmockel](http://kirstenhofmockel.org) and her fantastic group.
+Team Hofmockel is interested in studying soil microbial communities in
+bioenergy crop systems (something I know a little bit about from Jim
+[Tiedje](http://www.glbrc.msu.edu) and C. Titus Brown).  We're
+combining a nice experiment that involves lots of useful
+biogeochemistry measurements with deep metagenomic sequencing (oh
+yeah...).  Throw in the support of the DOE [KBase](http://kbase.us)
+initiative and my colleagues at ANL, we've got a lot of experts,
+tools, and resources in one room. (FYI - these resources are coming
+soon to a laboratory near you in late February...I'll blog on it.)
 
 The following is some of the challenges we faced when working with this data:
 
@@ -69,7 +79,7 @@ I don't think there is a good solution here.  We're going to have to make assump
 
 Advanced warning:  Get ready for brain explosion!  (Proposed solution: go get a glass of wine)
 
-Let's take an example:  I have a sequence (with abundance of 10) with equal matches to two non-redundant functions.  Non-redundant function #1 is associated with multiple redundant sequences which originate from multiple organisms.  I would argue that you should count each of these organisms as being present 10 times.  Similarly for non-redundant function #2 whose associated sequences originate from multiple organisms -- they should all get a count of 10 too.  If non-redundant functions #1 and #2 are involved in two different broad-function groups, they should also get a count of 10.  And the organism associated with each function would also be associated with the broader-group with a count of 10 (to be combined with other functions in the broad-group).  If non-redundant function #1 and #2 are involved in the same broad-group, it should get a single count of 10 but all the organisms associated with non-redundant #1 and #2 would associated with the broad-function at counts of 10 each.  I've been told that one of the reasons people don't do this is that they don't like it when genus --> class --> phyla --> etc.  dont add up.  I would argue that the comparison shouldn't be done between different taxonomic levels but rather between samples or within a sample (i.e., what is the taxonomic origin of function A vs B?).  My argument for counting everything is similar to my alien argument (officially trademarked heah).  (I should credit Kirsten for pushing me in this direction, so if I'm wrong, I got bad mentorship.  But if I'm right, I'm a brilliant young investigator...with awesome mentorship of course.)
+Let's take an example:  I have a sequence (with abundance of 10) with equal matches to two non-redundant functions.  Non-redundant function #1 is associated with multiple redundant sequences which originate from multiple organisms.  I would argue that you should count each of these organisms as being present 10 times.  Similarly for non-redundant function #2 whose associated sequences originate from multiple organisms -- they should all get a count of 10 too.  If non-redundant functions #1 and #2 are involved in two different broad-function groups, they should also get a count of 10.  And the organism associated with each function would also be associated with the broader-group with a count of 10 (to be combined with other functions in the broad-group).  If non-redundant function #1 and #2 are involved in the same broad-group, it should get a single count of 10 but all the organisms associated with non-redundant #1 and #2 would associated with the broad-function at counts of 10 each.  I've been told that one of the reasons people don't do this is that they don't like it when genus --> class --> phyla --> etc.  don't add up.  I would argue that the comparison shouldn't be done between different taxonomic levels but rather between samples or within a sample (i.e., what is the taxonomic origin of function A vs B?).  My argument for counting everything is similar to my alien argument (officially trademarked heah).  (I should credit Kirsten for pushing me in this direction, so if I'm wrong, I got bad mentorship.  But if I'm right, I'm a brilliant young investigator...with awesome mentorship of course.)
 
 This really bothers me.  It's possible we're overcounting a lot!   How possible is it to determine patterns of correlation when we're doing so much assuming/overestimating?  Our strategy has been to follow original hypotheses related to the experimental design to directly explore specific functions and their originating taxonomy.  Fortunately, we've got other data to provide additional support beyond sequencing data -- someone was a smartie (ISU)!
 
