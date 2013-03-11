@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : <FONT SIZE = 3.5>a</FONT><FONT SIZE = 6>D</FONT><FONT SIZE = 3.5>i</FONT><FONT SIZE = 6>NA</FONT> 
-tagline: Site Tagline
+tagline: 
 author :
   name : 
   email : 
