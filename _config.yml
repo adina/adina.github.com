@@ -24,7 +24,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://adina.github.com
+production_url : http://adina.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -39,7 +39,7 @@ JB :
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
-  # GitHub Pages (http://adina.github.com)
+  # GitHub Pages (http://adina.github.io)
   #   DO NOT SET BASE_PATH 
   #   (urls will be prefixed with "/" and work relatively)
   #
@@ -124,6 +124,6 @@ JB :
 
 name:  aDiNA
 description:  Thoughts on science and random things
-url:  http://adina.github.com
+url:  http://adina.github.io
 
   
