@@ -35,7 +35,7 @@ Most SWC alumni will know what stickie notes are -- students have good and bad c
 
 ###Slidedecks for instruction
 
-Nelle used slidedecks to teach her sections -- version control and NumPy.  I've found version control to be one of the more difficult topics to teach, but the feedback we received from students is that her particular [slidedecks](https://github.com/NelleV/SCCourses) were very useful.  I found that when students fell behind or were stuck, they could look at the slides and get caught up.   This was more tractable than the usual html documentation we have in our repo README docs.  Nelle's slides were also really well organized with nice examples throughout.  
+Nelle used slidedecks to teach her sections -- version control and NumPy.  I've found version control to be one of the more difficult topics to teach, but the feedback we received from students is that her particular [slidedecks](http://cbio.ensmp.fr/~nvaroquaux/2013wise/git.html) were very useful.  I found that when students fell behind or were stuck, they could look at the slides and get caught up.   This was more tractable than the usual html documentation we have in our repo README docs.  Nelle's slides were also really well organized with nice examples throughout.  
 
 ###Adjusting on the fly
 
