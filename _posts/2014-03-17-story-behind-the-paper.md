@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "Story behind the soil metagenome assembly paper
 description: "Adina's comments on Tackling Soil Diversity"
