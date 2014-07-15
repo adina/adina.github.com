@@ -125,5 +125,5 @@ JB :
 name:  aDiNA
 description:  Thoughts on science and random things
 url:  http://adina.github.io
-
+markdown: kramdown
   
