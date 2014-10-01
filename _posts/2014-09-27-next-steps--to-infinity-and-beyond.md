@@ -9,7 +9,7 @@ tags: []
 
 # The Next Adventure
 
-Starting in January, 2015, I will be beginning my adventure at [Iowa State University](http://www.iastate.edu/) in [Agricultural and Biosystems Engineering](http://www.abe.iastate.edu).  There, I'll be leading up the [GERMS lab](germslab.org).
+Starting in January, 2015, I will be beginning my adventure at [Iowa State University](http://www.iastate.edu/) in [Agricultural and Biosystems Engineering](http://www.abe.iastate.edu).  There, I'll be leading up the [GERMS lab](http://www.germslab.org).
 
 I cannot understate how excited I am about this and how grateful I am to have this opportunity and for the help along the way.
 
