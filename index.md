@@ -5,7 +5,7 @@ tagline:
 ---
 {% include JB/setup %}
 
-*If you're looking for my group's website, see the [GERMS lab](http://www.germslab.org).*
+*If you're looking for my group's website, see the [GERMS lab](http://germslab.org).*
 
 Recent posts:
 
