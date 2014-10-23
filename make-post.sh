@@ -1,0 +1,1 @@
+rake post title="name of post"
