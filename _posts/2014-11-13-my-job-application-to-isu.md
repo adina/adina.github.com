@@ -17,4 +17,6 @@ I'm sorry I lost the solicitation for this, but it was fairly similar ot this ye
 
 * [Teaching Statement](http://adina.github.io/pdfs/teaching.pdf)
 
+* [CV](http://adina.github.io/pdfs/cv.pdf)
+
 Best of luck to all those on the hunt to find a great fit!  
