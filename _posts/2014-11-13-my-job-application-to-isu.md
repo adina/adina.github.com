@@ -9,7 +9,7 @@ tags: [job hunt]
 
 When I was writing job applications, I wished I had some references of how others did it.  So here are mine...
 
-I'm sorry I lost the solicitation for this, but it was fairly similar ot this years [solicitation](http://adina.github.io/pdfs/2015_posting.pdf).
+I'm sorry I lost the solicitation for this, but it was fairly similar to this year's [solicitation](http://adina.github.io/pdfs/2015_posting.pdf).
 
 * [Cover Letter](http://adina.github.io/pdfs/cover_letter_final.pdf) - I would suggest getting this down to one page if you can.
 
