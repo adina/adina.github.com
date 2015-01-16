@@ -83,6 +83,8 @@ Thank you for your consideration of me for the board.  I have loved
 being involved with SWC and look forward to my future involvement in
 any capacity that helps the foundation!
 
+Sincerely,
 Adina Howe
+
 ![Adina](https://raw.githubusercontent.com/adina/adina.github.com/master/images/howe_swc_carpentry2.jpg)
 
