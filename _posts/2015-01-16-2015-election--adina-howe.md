@@ -84,5 +84,5 @@ being involved with SWC and look forward to my future involvement in
 any capacity that helps the foundation!
 
 Adina Howe
-![Adina](https://raw.githubusercontent.com/adina/adina.github.com/master/images/howe_swc_carpentry.jpg =250x)
+![Adina](https://raw.githubusercontent.com/adina/adina.github.com/master/images/howe_swc_carpentry.jpg)
 
