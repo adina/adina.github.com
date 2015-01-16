@@ -11,7 +11,7 @@ tags: [SWC, synergy, outreach]
 
 Hi!  My name is Adina Howe, and I thank you for considering my
 qualifications to serve on the [Steering Committee of the Software
-Carpentry Foundation](http://http://software-carpentry.org/).
+Carpentry Foundation](http://software-carpentry.org/).
 
 Software Carpentry has played a major role in my professional
 development, and I would argue played an integral role in my ability
@@ -23,11 +23,11 @@ provided me a foundation, resources, and mentors to help me improve my
 skills and discuss my frustration and eventually success!  This impact
 (and great instruction and mentorship) insprired me to join as one of
 the first round of instructors (2011-ish).  For more details, please
-feel free to peruse my see my [complete vitae](/pdfs/cv_howe_jan2015.pdf).
+feel free to peruse my see my [complete vitae](https://github.com/adina/adina.github.com/blob/master/pdfs/cv_howe_jan2015.pdf?raw=true).
 
 Currently, I am an assistant professor at Iowa State University in
 [Agricultural and Biosystems Engineering](http://abe.iastate.edu)
-where I am so excited to be leading the [Genomics and Environmental
+.  I am so excited to be leading the [Genomics and Environmental
 Research in Microbial Systems (GERMS) Lab](http://germslab.org) where
 we apply all the skills that SWC teaches for teaching and research.
 I hope to be developing classes integrating many of the topics we
@@ -76,12 +76,13 @@ we can make it a reality
 Funding for a program like this is always going to be a challenge, and
 I would like to have plans for moving forward in sustainable
 direction.  Further, I want to make sure that our mission and visions
-are discussed, representative, and transparent.
+are discussed, representative, and transparent.  I want to make sure
+that we are creating a resource-rich community for not only our students but each other.
 
 Thank you for your consideration of me for the board.  I have loved
 being involved with SWC and look forward to my future involvement in
 any capacity that helps the foundation!
 
 Adina Howe
-![Adina](./images/howe_swc_carpentry.jpg =250x)
+![Adina](https://raw.githubusercontent.com/adina/adina.github.com/master/images/howe_swc_carpentry.jpg =250x)
 
