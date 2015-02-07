@@ -19,6 +19,6 @@ I'm sorry I lost the solicitation for this, but it was fairly similar to this ye
 
 * [CV](http://adina.github.io/pdfs/cv.pdf)
 
-* [Job Talk](http://www.slideshare.net/adinachuanghowe/job-talk-iowa-state-university-ag-bio-engineering)
+* [Job Talk](http://www.slideshare.net/adinachuanghowe/job-talk-iowa-state-university-ag-bio-engineering) - I was asked to give a 90 minute talk, but after my AM meetings, decided that neither the audience or I could sustain that long. I checked with my chair, and we happily agreed that it would just fine if I reuced this to 60 minutes, so I did not present 80 slides!
 
 Best of luck to all those on the hunt to find a great fit!  
