@@ -19,4 +19,6 @@ I'm sorry I lost the solicitation for this, but it was fairly similar to this ye
 
 * [CV](http://adina.github.io/pdfs/cv.pdf)
 
+* [Job Talk](http://www.slideshare.net/adinachuanghowe/job-talk-iowa-state-university-ag-bio-engineering)
+
 Best of luck to all those on the hunt to find a great fit!  
