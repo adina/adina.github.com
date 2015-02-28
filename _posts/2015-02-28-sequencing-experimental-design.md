@@ -44,7 +44,7 @@ I thought I'd put it here for some feedback from the universe.
 * If I tell you who is there and what they are doing
 * If I develop a reference that is more specific to your system
 * This analysis took 1, 2, 3, >6 months
-* All your data and he analysis was openly accessible
+* All your data and the analysis was openly accessible
 
 I'd love to get feedback on what kinds of questions others are thinking of.
 
