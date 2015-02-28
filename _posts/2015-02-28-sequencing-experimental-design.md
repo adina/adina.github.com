@@ -23,6 +23,7 @@ I thought I'd put it here for some feedback from the universe.
 
 ## What kind of / how much sequencing do you need
 * Do you want to characterize differences or identify significant differences?  How many replicates do you minimally need?
+* Do you have appropriate positive / negative controls?  (Thanks @markstenglein)
 * Are you trying to identify some specific genes?  How much do you know about what you are looking for?  How much is known in general?
 * Once you get this data, are you prepared for the analysis?
 * How much does the quality of the data matter – how much resolution do you need?  
