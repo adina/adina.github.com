@@ -7,18 +7,18 @@ tags: []
 ---
 {% include JB/setup %}
 
-I went through an exercise this weekend trying to think of the questions I ask myself when designing sequencing-based experiment to describe microbial communities.  I am finding myself in may collaborations where I have to answer these questions with investigators with little to no experience with sequencing and its opportunities and limitations.  
+I went through an exercise this weekend trying to think of the questions I ask myself when designing sequencing-based experiment to describe microbial communities.  I am finding myself in many collaborations where I have to answer these questions with investigators with little to no experience with sequencing and its opportunities and limitations.  
 
 I thought I'd put it here for some feedback from the universe.
 
-## Should you even preform/use/initiate sequencing
+## Should you even perform/use/initiate sequencing
 * What is your research question?  
 * What is your budget?
 * What are your resources?  Samples?  Computational?
 * Do you have a hypothesis – or what do you expect to see?   Do you have previous evidence to suggest your expectations?
 * What kind of data do you have already or plan on getting?
 * What kind of data outputs do you expect? need? want? have?
-* Are there datasets that already can answer your question that can be used?
+* Are there datasets that already exist and can answer your questions?
 * How many treatments / gradients are being compared?
 
 ## What kind of / how much sequencing do you need
