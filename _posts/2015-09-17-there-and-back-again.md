@@ -7,8 +7,6 @@ tags: []
 ---
 {% include JB/setup %}
 
-# There and Back Again
-
 I am renewing my efforts to blog and tweet after about a 9 month hiatus aka "starting my tenure-track gig."  I thought I'd write up some of the activities that I have been up to.
 
 ### Moving to the awesome Ames, Iowa
